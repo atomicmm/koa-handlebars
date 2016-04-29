@@ -104,9 +104,11 @@ module.exports = (path, opts) => {
 
                 ctx.type = 'text/html'
 
-                return renderer.render(resolve(paths.abs, paths.rel), state).then((html) => {
-                    ctx.body = html;
-                })
+                return renderer
+                    .render(resolve(paths.abs, paths.rel), state)
+                    .then((html) => {
+                        ctx.body = html;
+                    })
             });
         }
 
