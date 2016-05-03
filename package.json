@@ -4,7 +4,7 @@
   "description": "the middleware of handlebars layout with koa@2.x",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon"
+    "start": "DEBUG=koa-handlebars nodemon"
   },
   "repository": {
     "type": "git",
