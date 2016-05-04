@@ -2,14 +2,13 @@
 
 
 const debug = require('debug')('koa-handlebars');
-const defaults = require('@f/defaults');
 const Q = require('q');
 
 const renderer = require('./lib/renderer');
 
 
 module.exports = (opts) => {
-    opts = defaults(opts || {}, {
+    opts = Object.assign({}, opts, {
         root: process.cwd(),
         extension: '.html', // 默认后缀
         cache: true,

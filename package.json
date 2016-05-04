@@ -1,6 +1,6 @@
 {
   "name": "koa2-handlebars",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "the middleware of handlebars layout with koa@2.x",
   "main": "index.js",
   "scripts": {
@@ -27,7 +27,6 @@
     "nodemon": "^1.9.1"
   },
   "dependencies": {
-    "@f/defaults": "^1.0.1",
     "debug": "^2.2.0",
     "handlebars": "^4.0.5",
     "lru-cache": "^4.0.1",
