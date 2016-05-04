@@ -8,7 +8,7 @@ const renderer = require('./lib/renderer');
 
 
 module.exports = (opts) => {
-    opts = Object.assign({}, opts, {
+    opts = Object.assign({}, {
         root: process.cwd(),
         extension: '.html', // 默认后缀
         cache: true,
@@ -16,7 +16,7 @@ module.exports = (opts) => {
         layoutPath: 'layouts', //布局视图目录
         partialPath: 'partials', //局部视图目录
         defaultLayout: 'main' //默认布局视图名字
-    })
+    }, opts)
 
     debug('template started with options: %j', opts)
     renderer.init(opts); // init the renderer;
