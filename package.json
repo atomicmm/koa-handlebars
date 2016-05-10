@@ -1,6 +1,6 @@
 {
   "name": "koa2-handlebars",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "the middleware of handlebars layout with koa@2.x",
   "main": "index.js",
   "scripts": {
