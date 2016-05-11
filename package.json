@@ -1,36 +1,35 @@
 {
-  "name": "koa2-handlebars",
-  "version": "1.0.3",
-  "description": "the middleware of handlebars layout with koa@2.x",
-  "main": "index.js",
-  "scripts": {
-    "start": "DEBUG=koa-handlebars nodemon"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/atomicmm/koa-handlebars.git"
-  },
-  "keywords": [
-    "koa",
-    "handlebars",
-    "layout"
-  ],
-  "author": "atomicmm@gmail.com",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/atomicmm/koa-handlebars/issues"
-  },
-  "homepage": "https://github.com/atomicmm/koa-handlebars#readme",
-  "devDependencies": {
-    "koa": "^2.0.0",
-    "koa-router": "^7.0.0",
-    "nodemon": "^1.9.1"
-  },
-  "dependencies": {
-    "debug": "^2.2.0",
-    "handlebars": "^4.0.5",
-    "lru-cache": "^4.0.1",
-    "q": "^1.4.1",
-    "recursive-readdir": "^2.0.0"
-  }
+    "name": "koa2-handlebars",
+    "version": "1.0.4",
+    "description": "the middleware of handlebars layout with koa@2.x",
+    "main": "index.js",
+    "scripts": {
+        "d": "cd example && DEBUG=koa-handlebars node index"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/atomicmm/koa-handlebars.git"
+    },
+    "keywords": [
+        "koa",
+        "handlebars",
+        "layout"
+    ],
+    "author": "atomicmm@gmail.com",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/atomicmm/koa-handlebars/issues"
+    },
+    "homepage": "https://github.com/atomicmm/koa-handlebars#readme",
+    "devDependencies": {
+        "koa": "^2.0.0",
+        "koa-router": "^7.0.0"
+    },
+    "dependencies": {
+        "debug": "^2.2.0",
+        "handlebars": "^4.0.5",
+        "lru-cache": "^4.0.1",
+        "q": "^1.4.1",
+        "recursive-readdir": "^2.0.0"
+    }
 }
