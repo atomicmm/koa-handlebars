@@ -6,13 +6,10 @@ const handlebars = require('../index.js');
 const app = new Koa();
 
 app.use(handlebars({
-    helpers: [{
-        name: 'add',
-        fn: (num1, num2) => num1 + num2
-    }, {
-        name: 'sub',
-        fn: (num1, num2) => num1 - num2
-    }]
+    helpers: {
+        add: (num1, num2) => num1 + num2,
+        sub: (num1, num2) => num1 - num2
+    }
 }));
 
 app.use(router.routes());
