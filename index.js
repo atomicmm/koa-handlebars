@@ -2,7 +2,6 @@
 
 
 const debug = require('debug')('koa-handlebars');
-const Q = require('q');
 
 const renderer = require('./lib/renderer');
 
