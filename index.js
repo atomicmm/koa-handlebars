@@ -1,12 +1,11 @@
 'use strict';
 
-
 const debug = require('debug')('koa-handlebars');
 
 const renderer = require('./lib/renderer');
 
-
-module.exports = (opts) => {
+module.exports.engine = renderer.engine
+module.exports.fn = opts => {
     opts = Object.assign({}, {
         root: process.cwd(),
         extension: '.html', // 默认后缀
@@ -43,7 +42,7 @@ module.exports = (opts) => {
 
             return renderer
                 .render(view, state, Object.assign({}, opts))
-                .then(html => ctx.body = html);
+                .then(html => ctx.body = html)
         }
 
         return next();
